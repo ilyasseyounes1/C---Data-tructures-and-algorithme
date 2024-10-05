@@ -1,0 +1,3 @@
+C:/Users/HUAWIE/Desktop/C-Data-Structures-And-Algorithmes/cmake-build-debug/CMakeFiles/C_Data_Structures_And_Algorithmes.dir
+C:/Users/HUAWIE/Desktop/C-Data-Structures-And-Algorithmes/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/HUAWIE/Desktop/C-Data-Structures-And-Algorithmes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

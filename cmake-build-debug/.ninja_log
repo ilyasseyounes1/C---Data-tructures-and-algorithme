@@ -1,0 +1,7 @@
+# ninja log v5
+0	290	7498512878677131	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/main.c.obj	c410142f15bfc726
+2	146	7498516367891330	C_Data_Structures_And_Algorithmes.exe	47621655fa39a963
+4	241	7498516234624427	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/SingleLL.c.obj	89ba2fe0ff54dbbd
+2	348	7498516448720600	build.ninja	d1775c02548f4d3a
+3	162	7498516845470141	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/SingleLL.c.obj	89ba2fe0ff54dbbd
+3	300	7498517064080437	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/SingleLL.c.obj	89ba2fe0ff54dbbd
