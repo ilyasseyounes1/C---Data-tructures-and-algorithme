@@ -3,16 +3,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node {
+typedef struct Node {
     int data;
     struct Node* next;
-};
+}Node;
 
-struct Node* head = NULL;
+ Node* head = NULL;
 
 // Print function to print the entire list
 void Print() {
-    struct Node* temp = head;
+     Node* temp = head;
     printf("List is: ");
     while (temp != NULL) {
         printf("%d ", temp->data);
@@ -25,12 +25,13 @@ void Print() {
 void Insert(int x) {
     struct Node* temp = malloc(sizeof(struct Node));
     temp->data = x;
-    temp->next = head;
+    temp->next = NULL;
+    if (head != NULL) temp-> next = head;
     head = temp;
 }
 void InsertAfter (int x,int index){
-    struct Node* node = malloc(sizeof (struct Node));
-    struct Node* temp = head;
+     Node* node = malloc(sizeof (struct Node));
+     Node* temp = head;
     if (head->next == NULL){
         Insert(x);
         return;
@@ -45,21 +46,20 @@ void InsertAfter (int x,int index){
 
 }
 void Delet (int index){
-    struct Node* node = malloc(sizeof(struct Node));
-
-    while (index != 0){
-        node = node ->next;
-        index--;
+   //  Node* node = (Node*) malloc(sizeof(struct Node));
+     Node * node = head;
+     if (index == 1){
+         head = node -> next ;
+         //free(node);
+     }
+    for (int i = 0; i<index-2;i++){
+        node = node -> next;
     }
-    if (node == head){
-        head = head -> next;
-    }else if (node -> next -> next == NULL){
-        node -> next = NULL;
-    }else
-    node -> next = node -> next -> next;
-
+    Node* temp = node -> next;
+    node -> next = temp -> next;
+    free(temp);
 }
-int main() {
+int main8() {
     int n, x, i;
 
     printf("How many numbers?\n");
@@ -72,12 +72,14 @@ int main() {
         Print();
     }
 
-    InsertAfter(12,2);
+    InsertAfter(12,2)
+    ;
     InsertAfter (13,4);
     Print();
-    Delet(2);
+    Delet(3);
     Print();
 
     return 0;
 }
+
 
