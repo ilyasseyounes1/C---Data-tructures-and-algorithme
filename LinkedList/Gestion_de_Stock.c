@@ -37,7 +37,7 @@ void AfficheTabStock (Article A[],int n , int q) {
         }
     }
 }
-int main8 (){
+int main (){
     Article article;
     SaisieArticle(&article);
     AfficherArticle(article);

@@ -7,4 +7,4 @@ add_executable(C_Data_Structures_And_Algorithmes
         "LinkedList/SingleLL.c"
         "LinkedList/Points_de_lespace.c"
         LinkedList/Gestion_de_Stock.c
-        "TD 2/PointInSpace.c")
+        Inscription_au_congres.c)
