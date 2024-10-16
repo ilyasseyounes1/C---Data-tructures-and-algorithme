@@ -25,7 +25,7 @@ Point barycentre (Point points [],int n){
 }
 
 
-int main3 (){
+int main (){
     Point p1 = {3.0,4.0};
     Point p2 = {5.2,7.0};
     afficher_point(p1);

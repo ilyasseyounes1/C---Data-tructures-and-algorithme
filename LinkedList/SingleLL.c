@@ -29,6 +29,26 @@ void Insert(int x) {
     if (head != NULL) temp-> next = head;
     head = temp;
 }
+void add_at_end (Node* head , int data){
+    Node *temp = head;
+    Node* node = malloc(sizeof (Node));
+    node -> data = data;
+    node -> next = NULL;
+
+    while(temp->next != NULL){
+        temp = temp -> next;
+    }
+    temp -> next = node;
+}
+void add_at_beginning( int data){
+    Node* node = malloc(sizeof (struct Node));
+    node -> data = data;
+    if (head == NULL){
+        head = node;
+    }
+    node -> next = head ;
+    head = node;
+}
 void InsertAfter (int x,int index){
      Node* node = malloc(sizeof (struct Node));
      Node* temp = head;
@@ -59,7 +79,7 @@ void Delet (int index){
     node -> next = temp -> next;
     free(temp);
 }
-int main8() {
+int main() {
     int n, x, i;
 
     printf("How many numbers?\n");
@@ -78,7 +98,10 @@ int main8() {
     Print();
     Delet(3);
     Print();
-
+    add_at_end(head,100);
+    Print();
+    add_at_beginning(100);
+    Print();
     return 0;
 }
 

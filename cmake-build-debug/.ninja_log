@@ -1,16 +1,11 @@
 # ninja log v5
-0	290	7498512878677131	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/main.c.obj	c410142f15bfc726
 5	217	7502637200155607	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Points_de_l'espace.c.obj	e115ced5c934e48b
-3	212	7502757490853702	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Gestion_de_Stock.c.obj	7df4e2d84977d172
-168	330	7502734905587756	C_Data_Structures_And_Algorithmes.exe	2655c58dd064508
-3	155	7502719135501474	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/SingleLL.c.obj	89ba2fe0ff54dbbd
-1	212	7502757993114532	build.ninja	d1775c02548f4d3a
-18	256	7502718727865948	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Points_de_lespace.c.obj	b6d19f71260b557a
+0	290	7498512878677131	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/main.c.obj	c410142f15bfc726
+8	219	7507953776003179	C_Data_Structures_And_Algorithmes.exe	2791322a8188d62a
+3	246	7502757995876848	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Gestion_de_Stock.c.obj	7df4e2d84977d172
+7	234	7507952596349451	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/SingleLL.c.obj	89ba2fe0ff54dbbd
+2	313	7507957158584205	build.ninja	d1775c02548f4d3a
+8	322	7507955541933855	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Points_de_lespace.c.obj	b6d19f71260b557a
 18	154	7502705338019655	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/TD_2/PointInSpace.c.obj	13f73586392373a6
 3	188	7502706793053971	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/TD_2/SingleLL.c.obj	d1a1479c62b034a2
-16	205	7502757490778723	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/Inscription_au_congres.c.obj	4eb4637f8b9faeab
-1	183	7502757993114532	build.ninja	d1775c02548f4d3a
-3	246	7502757995876848	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Gestion_de_Stock.c.obj	7df4e2d84977d172
-246	400	7502757997360695	C_Data_Structures_And_Algorithmes.exe	4856b8a45d34ef68
-4	198	7502758296507274	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/Inscription_au_congres.c.obj	4eb4637f8b9faeab
-199	362	7502758298095911	C_Data_Structures_And_Algorithmes.exe	4856b8a45d34ef68
+4	206	7507955854685570	CMakeFiles/C_Data_Structures_And_Algorithmes.dir/Inscription_au_congres.c.obj	4eb4637f8b9faeab
