@@ -10,19 +10,19 @@ typedef struct {
 
 void SaisieArticle (Article* a ) {
     printf("enter article  number : ");
-    scanf("%[^\n]d", &a->numero);
+    scanf("%hdn]d", &a->numero);
      printf("enter article name : ");
     scanf("%s", a -> libelle);
     printf("enter quantity : ");
-    scanf("%d", &a -> quantite);
+    scanf("%hd", &a -> quantite);
     printf("enter price : ");
-    scanf("%f", &a -> prix);
+    scanf("%hd", &a -> prix);
 }
 void AfficherArticle (Article a){
     printf("\n Article Number : %d \n",a.numero);
     printf("Libelle : %s \n ",a.libelle);
     printf("quantitie : %d\n" , a.quantite);
-    printf("prix ; %.3f \n ",a.prix);
+    printf("prix ; %.3hd \n ",a.prix);
 }
 void SaisieTabArticle (Article A[] ,int n) {
     for (int i = 0; i < n; i++) {
