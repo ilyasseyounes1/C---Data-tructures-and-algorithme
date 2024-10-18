@@ -55,6 +55,12 @@ build CMakeFiles/C_Data_Structures_And_Algorithmes.dir/main.c.obj: C_COMPILER__C
   OBJECT_DIR = CMakeFiles\C_Data_Structures_And_Algorithmes.dir
   OBJECT_FILE_DIR = CMakeFiles\C_Data_Structures_And_Algorithmes.dir
 
+build CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Custom_LinkedList.c.obj: C_COMPILER__C_Data_Structures_And_Algorithmes_unscanned_Debug C$:/Users/HUAWIE/Desktop/C-Data-Structures-And-Algorithmes/LinkedList/Custom_LinkedList.c || cmake_object_order_depends_target_C_Data_Structures_And_Algorithmes
+  DEP_FILE = CMakeFiles\C_Data_Structures_And_Algorithmes.dir\LinkedList\Custom_LinkedList.c.obj.d
+  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C_Data_Structures_And_Algorithmes.dir
+  OBJECT_FILE_DIR = CMakeFiles\C_Data_Structures_And_Algorithmes.dir\LinkedList
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target C_Data_Structures_And_Algorithmes
@@ -63,7 +69,7 @@ build CMakeFiles/C_Data_Structures_And_Algorithmes.dir/main.c.obj: C_COMPILER__C
 #############################################
 # Link the executable C_Data_Structures_And_Algorithmes.exe
 
-build C_Data_Structures_And_Algorithmes.exe: C_EXECUTABLE_LINKER__C_Data_Structures_And_Algorithmes_Debug CMakeFiles/C_Data_Structures_And_Algorithmes.dir/main.c.obj
+build C_Data_Structures_And_Algorithmes.exe: C_EXECUTABLE_LINKER__C_Data_Structures_And_Algorithmes_Debug CMakeFiles/C_Data_Structures_And_Algorithmes.dir/main.c.obj CMakeFiles/C_Data_Structures_And_Algorithmes.dir/LinkedList/Custom_LinkedList.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C_Data_Structures_And_Algorithmes.dir

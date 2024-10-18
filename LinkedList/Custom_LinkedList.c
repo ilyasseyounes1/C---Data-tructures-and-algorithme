@@ -62,6 +62,53 @@ void print (Node* head){
     printf("\n");
 }
 void delet_first(Node* head){
+    Node* temp = head ;
+    if (head == NULL){
+        printf("the list is empty : ");
+    }
+    head = head -> next;
+    free(temp);
+    temp = NULL ;
     
 }
+void delet_last (Node* head ){
+    Node* temp1 = head;
+    Node* temp2 = head;
+    while (temp1->next != NULL){
+        temp2 = temp1;
+        temp1 = temp1->next;
+    }
+    temp2->next =NULL;
+    free(temp1);
+    temp1 = NULL;
+}
+// Version 2.0:
+void delet_last2 (Node* head){
+    Node* temp = head;
+    while (temp->next->next !=NULL){
+        temp = temp->next;
+    }
+    free(temp->next);
+    temp->next = NULL;
+}
+void delet_pos(Node** head , int pos){
+    Node* current = *head;
+    Node* prev = *head;
+    if(*head == NULL){
+        print("List is already empty !");
+    }else if(pos == 1 ){
+        *head = current->next;
+        free (current);
+        current =NULL;
+    }
+    while (pos != 1){
+        prev = current;
+        current = current->next;
+        pos--;
+    }
+    prev->next = current->next;
+    free(current);
+    current = NULL;
 
+
+}

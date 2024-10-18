@@ -11,7 +11,7 @@ typedef struct {
     char nom;
     char prenom;
     int hotel;
-    bool conjoin;
+    bool conjoint;
     repasInfo repas;
 }Participant;
 
@@ -31,16 +31,35 @@ void nb2Etoiles (tabPart tabPart1){
 int  nbDej (tabPart tabPart2){
     int dej = 0;
     for (int i = 0; i<100 ; i++){
-        if (tabPart2.p[i].conjoin == false){
+        if (tabPart2.p[i].conjoint == false){
             dej += tabPart2.p[i].repas.dejeuner;
         }else {
-            dej = (dej + tabPart2.p[i].repas.dejeuner)*2;
+            dej = (dej + tabPart2.p[i].repas.dejeuner)+2;
         }
-
     }
     return dej;
 }
-void facture (Participant p){
+int  facture (Participant p){
+    int total = 0;
+
+    if (p.hotel == 2){
+        total += 75;
+    }else{
+        total+=100;
+    }
+    int ropas_price;
+    if(p.repas.dejeuner == 1 && p.repas.diner == 1){
+        total += 15 + 35;
+    }else if (p.repas.diner == 1) {
+        total += 15;
+    } else {
+       total += 35;
+    }
+    if (p.conjoint == false)
+        ropas_price *= 2;
+
+    total += ropas_price;
+    return total;
 
 }
 int main (){
